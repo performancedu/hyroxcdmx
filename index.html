@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#080b10" />
+<meta name="description" content="Performance Education. Guía interactiva de logística, nutrición y tolerancia gastrointestinal para HYROX." />
+<title>RACE ATLAS · Preparación HYROX</title>
+<style>
+:root{--bg:#090a0d;--layer:#111318;--layer2:#181b20;--line:#34383f;--line2:#51555a;--white:#f6f6f4;--sub:#b3b7bc;--dim:#7e858e;--yellow:#dfe6ee;--yellow2:#f3f6f9;--red:#ff9a94;--green:#b4d9c3;--max:1130px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}body{overflow-x:clip;background:var(--bg);color:var(--white);margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;line-height:1.55}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}a{color:var(--yellow)}button:disabled{opacity:.5;cursor:default}.container{max-width:var(--max);margin:auto;padding:0 22px}.mono,.eyebrow,.code-label,.stat-label,.index,.button-tag{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}.topbar{height:65px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}.brand{font-size:20px;font-weight:950;letter-spacing:.04em}.brand span{color:var(--yellow)}.brand small{display:block;color:var(--sub);font-size:8px;letter-spacing:.22em;font-weight:650;margin-top:-5px}.top-links{display:flex;gap:10px;align-items:center}.top-links a{border:1px solid var(--line);border-radius:999px;padding:8px 11px;text-decoration:none;font-size:11px;font-weight:800;color:var(--white)}.top-links a:last-child{color:#070809;background:var(--yellow);border-color:var(--yellow)}.hero{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;padding:62px 0 43px;position:relative}.hero::before{content:'';position:absolute;right:-8%;top:10%;width:50%;height:75%;background:radial-gradient(ellipse,#89a3c419,transparent 65%);pointer-events:none}.eyebrow{font-size:11px;color:var(--yellow);font-weight:900}.hero h1{font-size:clamp(58px,7.1vw,106px);line-height:.88;margin:19px 0 25px;font-weight:950;letter-spacing:-.075em}.hero h1 em{font-style:normal;color:var(--yellow)}.hero p{font-size:17px;max-width:480px;color:#c5c7ca;margin:0 0 24px}.pills{display:flex;gap:7px;flex-wrap:wrap}.pill-label{font-size:10px;border:1px solid #4e5259;border-radius:30px;padding:7px 10px;font-weight:800;letter-spacing:.06em}.hero-art{border:1px solid #40444a;border-radius:23px;background:radial-gradient(ellipse at 60% 10%,#1a2027,#121316 60%);padding:24px;box-shadow:0 24px 100px #0009}.art-caption{display:flex;justify-content:space-between;gap:10px;font-size:10px;font-weight:900;letter-spacing:.2em;color:#dadada;margin-bottom:12px}.art-caption b{color:var(--yellow)}.art-circuit{display:block;width:100%;height:auto}.art-caption2{border-top:1px solid var(--line);padding-top:11px;margin-top:9px;color:#9aa1a8;font-size:10px;display:flex;justify-content:space-between}.cross{color:var(--yellow);font-size:19px}.section{padding:40px 0 26px;border-top:1px solid #2e3238;scroll-margin-top:25px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}.section-heading h2{font-size:clamp(29px,3.6vw,46px);letter-spacing:-.045em;line-height:1.05;margin:7px 0 0}.section-heading p{color:var(--sub);font-size:13px;max-width:350px;margin:0}.index{color:var(--yellow);font-size:11px;font-weight:900}.panel{border:1px solid var(--line);background:linear-gradient(145deg,#14161a,#0f1013);border-radius:20px;padding:24px}.panel.light{background:#171d24;border-color:#485362}.warning{background:#171e25;border:1px solid #4d5a67;border-radius:13px;padding:13px 15px;color:#e8eef3;font-size:12px;line-height:1.6}.warning.red{background:#2a1d20;border-color:#99656b;color:#ffd9d5}.subtle{color:var(--sub)}.little{font-size:12px}.small{font-size:13px}.accent{color:var(--yellow)}.muted{color:var(--dim)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--layer);border:1px solid var(--line);border-radius:17px;padding:20px}.card h3{margin:0 0 8px;font-size:21px;letter-spacing:-.035em}.card p{color:var(--sub);margin:0 0 12px;font-size:13px}.card b{color:var(--white)}.quicknav{display:flex;gap:8px;flex-wrap:wrap;padding:10px 0 30px}.quicknav a{font-size:12px;text-decoration:none;font-weight:750;padding:9px 14px;background:#191b1f;border:1px solid #353941;border-radius:999px;color:var(--white)}.quicknav a:hover{border-color:var(--yellow)}.race-svg{display:block;width:100%;height:auto;max-height:380px;background:repeating-linear-gradient(-35deg,#111317,#111317 6px,#15171a 6px,#15171a 7px);border-radius:12px}.race-svg .track{fill:none;stroke:#ebebea;stroke-width:4;stroke-linecap:round;opacity:.6}.race-svg .track2{fill:none;stroke:#dfe6ee;stroke-width:2;stroke-dasharray:8 9}.race-svg .stbox{fill:#181b1f;stroke:#8f9499;stroke-width:1.5}.race-svg .stbox.is-on{stroke:var(--yellow);stroke-width:3;fill:#1a2128}.race-svg text{fill:#eee;font-size:13px;font-weight:850}.race-svg text.small-svg{font-size:9px;fill:#c3c8ca;letter-spacing:.1em}.race-svg .spec{fill:var(--yellow)}.station-toolbar{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.station-btn{color:#e9ebee;background:#15171a;border:1px solid #3b4148;border-radius:9px;padding:9px 11px;font-size:11px;font-weight:850}.station-btn[aria-pressed="true"]{color:#0c1116;background:var(--yellow);border-color:var(--yellow)}.station-info{background:#202118;border:1px solid #465563;border-radius:12px;padding:15px 17px;font-size:13px}.station-info strong{color:var(--yellow);font-size:17px}.temporal{padding:22px 17px 18px}.time-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin-top:18px}.time-step{min-width:0;position:relative;padding:10px 3px 3px;background:none;border:0;color:#b2b4b8;font-size:12px;font-weight:900;text-align:center}.time-step:before{content:'';position:absolute;top:36px;left:0;right:0;height:1px;background:#61656a}.time-step .time-node{display:block;margin:11px auto 8px;border:3px solid #70757b;background:#14171a;border-radius:50%;width:16px;height:16px;position:relative;z-index:1}.time-step[aria-selected="true"]{color:var(--yellow)}.time-step[aria-selected="true"] .time-node{border-color:var(--yellow);background:var(--yellow);box-shadow:0 0 0 5px #dfe6ee23}.time-step .time-name{font-size:10px;display:block}.time-date{display:block;font-size:10px;color:var(--sub);font-weight:550;min-height:17px}.time-body{display:grid;grid-template-columns:.78fr 1.22fr;gap:18px;margin-top:17px}.time-title{border-right:1px solid #3b3e41;padding:15px 18px 10px 3px}.time-title .giant{font-size:55px;font-weight:950;color:var(--yellow);line-height:.98;letter-spacing:-.065em}.time-title h3{font-size:20px;margin:13px 0 8px}.time-title p{color:#aab0b5;font-size:13px}.time-tasks{display:grid;gap:10px;align-content:start}.taskline{display:flex;gap:10px;align-items:start;border-bottom:1px solid #323539;padding:10px 0}.taskline:before{content:'✓';color:var(--yellow);font-weight:950}.taskline span{font-size:13px}.datebar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:10px}.datebar input{background:#171a1e;color:var(--white);border:1px solid #54585c;border-radius:8px;padding:10px;min-width:212px;color-scheme:dark}.datebar label{font-weight:800;font-size:12px;color:var(--sub)}.choices{display:flex;gap:8px;flex-wrap:wrap}.choice{background:#16191d;border:1px solid #555a60;padding:9px 14px;border-radius:11px;font-weight:800;font-size:12px;color:#ecedef}.choice[aria-pressed="true"]{color:#090b0b;background:var(--yellow);border-color:var(--yellow)}.plan-block h3{font-size:18px;margin:0 0 7px}.plan-block p{font-size:13px;color:var(--sub)}.plan-block ul{list-style:none;padding:0;margin:14px 0 0}.plan-block li{padding:8px 0;border-top:1px solid #32363b;color:#e0e1e2;font-size:13px}.plan-block li:before{content:'↳';color:var(--yellow);margin-right:9px}.label{display:block;margin:0 0 10px;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;font:900 11px ui-monospace,monospace}.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.check{display:flex;align-items:flex-start;gap:11px;padding:13px;border:1px solid #3a4045;background:#161a1e;border-radius:12px;font-size:12px;cursor:pointer}.check input{width:17px;height:17px;margin-top:1px;accent-color:var(--yellow);flex:none}.check:has(input:checked){background:#1a2128;border-color:#495563}.check input:checked+span{text-decoration:line-through;color:#929994}.progress-wrap{background:#30343a;height:7px;border-radius:10px;overflow:hidden;margin:11px 0}.progress-fill{height:100%;width:0;background:var(--yellow);transition:width .15s}.food-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.food-flow .number{color:var(--yellow);font-weight:950;font-size:34px;line-height:1}.food-flow strong{display:block;margin:9px 0 5px}.food-flow p{margin:0;color:var(--sub);font-size:13px}.selector-stack{display:flex;flex-direction:column;gap:20px}.input-row{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:11px 0}.slider-label{font-weight:850;color:var(--yellow);font-size:24px}.slider-track{width:100%;accent-color:var(--yellow);cursor:pointer}.scale-labels{display:flex;justify-content:space-between;color:#8a9097;font-size:10px}.results{border-radius:18px;background:linear-gradient(145deg,#182028,#10171f);border:1px solid #4a5968;padding:24px}.results h3{font-size:24px;line-height:1.1;margin:8px 0 10px}.results ul{margin:10px 0;padding-left:19px}.results li{margin:10px 0;font-size:13px;color:#eeece1}.results .result-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.status-label{border:1px solid #5b6877;border-radius:30px;padding:6px 10px;color:var(--yellow2);font:900 10px ui-monospace,monospace;text-transform:uppercase}.results.emergency{background:#2d191a;border-color:#bb7269}.results.emergency .status-label{color:#ffd5cd;border-color:#b47a73}.fineprint{font-size:11px;color:#a0a6ac;line-height:1.65}.reco{white-space:normal}.btn-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}.main-btn{background:var(--yellow);border:1px solid var(--yellow);color:#080a09;font-weight:900;border-radius:10px;padding:11px 16px;font-size:12px}.secondary-btn{background:#21252a;border:1px solid #616972;color:#f2f3f4;font-weight:850;border-radius:10px;padding:11px 16px;font-size:12px}.sources{color:#aeb4b9;font-size:12px}.sources a{color:#dadcde;overflow-wrap:anywhere}.sources li{padding:5px 0}.footer{border-top:1px solid #343941;padding:24px 0 42px;margin-top:35px;color:#acb1b6;font-size:11px;display:flex;justify-content:space-between;gap:20px}.footer b{color:var(--white)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.for-print{display:none}@media(max-width:790px){.hero{grid-template-columns:1fr;padding:36px 0 25px}.hero h1{font-size:clamp(64px,14vw,96px)}.hero-art{max-width:640px}.grid3,.food-flow{grid-template-columns:1fr}.section-heading{align-items:start;flex-direction:column;gap:7px}.time-body{grid-template-columns:1fr}.time-title{border-right:0;border-bottom:1px solid var(--line);padding:8px 0}.time-title .giant{font-size:44px}.grid2{grid-template-columns:1fr}.top-links a:nth-child(1){display:none}}@media(max-width:530px){.container{padding:0 14px}.brand{font-size:17px}.topbar{height:60px}.top-links{gap:5px}.top-links a{padding:7px 9px;font-size:10px}.hero p{font-size:15px}.hero-art{padding:14px;border-radius:16px}.section{padding:31px 0 23px}.section-heading h2{font-size:32px}.panel{padding:17px;border-radius:16px}.time-controls{gap:1px}.time-step{font-size:10px}.time-step .time-name{font-size:8px}.time-date{font-size:8px}.temporal{padding:17px 9px}.checklist{grid-template-columns:1fr}.footer{flex-direction:column}.station-btn{font-size:10px;padding:9px 8px}.card{padding:16px}.datebar input{width:100%}.art-caption{font-size:9px}}@media print{*{print-color-adjust:exact;-webkit-print-color-adjust:exact}body{background:#fff;color:#111}.no-print,.topbar,.top-links,.quicknav,.hero-art,.station-toolbar,.datebar,.choices,.slider-track,.btn-row{display:none!important}.container{max-width:none}.hero{display:block;padding:15px 0}.hero h1{font-size:50px}.hero p,.section-heading p,.small,.little,.fineprint{color:#333}.panel,.card,.results{color:#111!important;background:#fff!important;border:1px solid #888!important;break-inside:avoid}.panel *, .card *, .results *{color:#111!important}.section{padding:10px 0}.section-heading h2{font-size:28px}.for-print{display:block}}
+
+/* RACE ATLAS v3 — inspired by SUCCESSION's explorer architecture */
+:root{--bg:#080b10;--layer:#10151d;--layer2:#151b25;--line:#2a3442;--line2:#63717c;--white:#f5f8fa;--sub:#afbcc9;--dim:#8394a6;--yellow:#dfe6ee;--yellow2:#f3f6f9;--max:1320px}
+body{background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.container{max-width:var(--max);padding:0 clamp(16px,4vw,56px)}
+.topbar{height:81px;border-bottom:1px solid #25303b}
+.brand{display:flex;align-items:center;gap:12px;letter-spacing:.035em;font-size:17px}
+.brand .brand-mark{width:38px;height:38px;border:2px solid var(--yellow);border-radius:50%;display:grid;place-items:center;flex:none;position:relative}
+.brand .brand-mark:before,.brand .brand-mark:after{content:'';position:absolute;border:1px solid var(--yellow);border-radius:50%;inset:7px}.brand .brand-mark:after{inset:14px;background:var(--yellow)}
+.brand small{margin-top:-1px;font-size:9px;letter-spacing:.18em}
+.top-links a{border-color:#4e5c69;background:#0e151d}
+.top-links a:last-child{background:var(--yellow);border-color:var(--yellow);color:#10120a}
+.hero{min-height:600px;grid-template-columns:1.05fr .95fr;padding:51px 0 47px;gap:10px;overflow:hidden}
+.hero:before{top:-28%;right:-30%;width:880px;height:850px;background:radial-gradient(circle,#8aa4c424 0%,#1a233b1e 43%,transparent 71%)}
+.hero h1{font-size:clamp(49px,5.8vw,86px);line-height:.99;letter-spacing:-.072em;margin:20px 0 23px}
+.hero p{font-size:clamp(15px,1.3vw,19px);color:#b9c5cf;max-width:560px;line-height:1.65}
+.eyebrow,.index,.label{color:var(--yellow)}
+.hero-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:26px}
+.hero-primary{background:var(--yellow);border:0;border-radius:100px;color:#0c1116;font-size:12px;font-weight:900;padding:16px 24px;text-decoration:none;letter-spacing:.025em}
+.hero-secondary{color:#dbe2e8;font-size:12px;font-weight:800;text-decoration:none;border-bottom:1px solid #727e86;padding:4px 0}
+.hero .pills{margin-top:22px}.hero .pill-label{color:#cfd7df;border-color:#44505e;background:#111720}
+.hero-orb-wrap{position:relative;width:100%;max-width:560px;aspect-ratio:1;justify-self:center}
+.hero-orb-wrap svg{width:100%;height:100%;filter:drop-shadow(0 22px 55px #8aa4c433)}
+.hero-orb-foot{position:absolute;bottom:-10px;width:100%;font:800 10px ui-monospace,monospace;text-align:center;letter-spacing:.23em;color:#8fa2b3}
+.quicknav{padding:12px 0 28px;gap:8px}.quicknav a{font-size:10px;letter-spacing:.03em;background:#121b24;border-color:#33414f;padding:10px 13px}
+.section{border-top:1px solid #273440;padding-top:48px}
+.section-heading h2{font-size:clamp(30px,3.45vw,45px)}
+.section-heading p{max-width:440px}
+.panel,.card{border-color:#2c3947;background:linear-gradient(145deg,#101720,#0c1118);border-radius:18px}
+.card p,.panel p{color:#b2c0cc}.panel.light{background:#1e1e18;border-color:#514d2d}
+.section-index-small{color:#8193a1;font-size:12px;letter-spacing:.2em;font-weight:850}
+.atlas-selector{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0 18px}
+.atlas-chip{border:1px solid #344657;background:#111921;color:#bccbd7;font-size:11px;border-radius:999px;padding:10px 14px;font-weight:850;letter-spacing:.03em}
+.atlas-chip[aria-pressed="true"]{background:#d7e0e8;color:#0f151c;border-color:#d7e0e8}
+.atlas-controller{background:#0e151d;border:1px solid #293847;border-radius:19px;padding:21px 24px;margin-bottom:16px}
+.atlas-controller-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.atlas-controller-head strong{font-size:15px;font-weight:900}
+.atlas-controller-head output{color:var(--yellow);font-size:13px;font-weight:900;letter-spacing:.06em}
+.atlas-scale{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;margin-top:13px}
+.atlas-scale input{width:100%;accent-color:var(--yellow);cursor:pointer;height:7px;margin:8px 0}
+.atlas-scale-marks{display:flex;justify-content:space-between;gap:8px;color:#8799a7;font-size:9px;font-weight:800;letter-spacing:.05em}
+.atlas-next{height:43px;width:43px;background:#1a2732;border:1px solid #536776;color:white;border-radius:50%;font-size:21px;font-weight:800}
+.atlas-next:hover{border-color:var(--yellow);color:var(--yellow)}
+.atlas-main{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(290px,.77fr);gap:16px}
+.atlas-view,.atlas-inspector{background:linear-gradient(145deg,#101720,#090e15);border:1px solid #2c3947;border-radius:20px;overflow:hidden}
+.atlas-view{padding:19px 20px 13px;min-height:520px}
+.atlas-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;font-weight:850}
+.atlas-badge{border:1px solid #415261;background:#17212a;color:#dce4eb;font-size:10px;border-radius:999px;padding:6px 10px;white-space:nowrap}
+.atlas-canvas{height:408px;display:grid;place-items:center;max-width:100%}.atlas-canvas svg{width:100%;height:100%;max-width:735px}
+.atlas-view-foot{border-top:1px solid #27333e;padding-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:10px;letter-spacing:.08em;color:#8b9daa}
+.atlas-inspector{padding:25px 24px;min-height:520px;display:flex;flex-direction:column;gap:12px}
+.atlas-top{display:flex;justify-content:space-between;color:#92a3b0;font-size:10px;font-weight:850;letter-spacing:.14em}
+.atlas-big{font-size:61px;font-weight:950;letter-spacing:-.09em;line-height:1;color:#dbe4ec}
+.atlas-kicker{color:var(--yellow);font-size:10px;font-weight:900;letter-spacing:.19em}
+.atlas-inspector h3{font-size:clamp(27px,3vw,36px);line-height:1.06;margin:0;letter-spacing:-.05em}
+.atlas-inspector p{font-size:13px;line-height:1.65;color:#acbbc7;margin:0}
+.atlas-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.atlas-metric{background:#17222c;border:1px solid #2a3a48;border-radius:12px;padding:13px}
+.atlas-metric b{display:block;font-size:17px}.atlas-metric span{display:block;font-size:10px;color:#9caebb}
+.atlas-inspector .atlas-tasks{margin:0;padding:0;list-style:none}.atlas-inspector .atlas-tasks li{border-bottom:1px solid #2a333c;padding:9px 0;font-size:12px;color:#e0e7ec;line-height:1.45}
+.atlas-inspector .atlas-tasks li:before{content:'↗';color:var(--yellow);margin-right:8px;font-weight:900}
+.atlas-caution{margin-top:auto;background:#171f26;border:1px solid #445261;color:#dce5ec;padding:12px 13px;border-radius:11px;font-size:11px;line-height:1.5}
+.atlas-link{align-self:flex-start;text-decoration:none;font-size:11px;font-weight:900;color:var(--yellow);border-bottom:1px solid #736d39;padding-bottom:3px}
+.atlas-bottom{display:grid;grid-template-columns:1.14fr .86fr;gap:16px;margin-top:16px}
+.atlas-bottom-box{background:linear-gradient(145deg,#101720,#0c121a);border:1px solid #2c3947;border-radius:20px;padding:22px}
+.atlas-bottom-box h3{font-size:18px;margin:0 0 10px;letter-spacing:-.03em}
+.atlas-bottom-box p{font-size:12px;color:#acbac6;line-height:1.55}
+.atlas-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:20px}
+.atlas-flow-item{background:#17212a;border:1px solid #30404e;border-radius:12px;padding:15px 12px}
+.atlas-flow-item span{font-size:22px;color:var(--yellow);display:block;font-weight:950}.atlas-flow-item b{font-size:12px}.atlas-flow-item p{font-size:11px;margin:5px 0 0}
+.atlas-phys-map{width:100%;height:197px;display:block}
+.atlas-phys-map .node{cursor:pointer}
+.atlas-detail-status{color:var(--yellow);font-size:10px;letter-spacing:.12em;font-weight:900;margin:8px 0 3px}
+.atlas-detail-text{font-size:12px;line-height:1.55;min-height:42px;color:#b9c5d0}
+.atlas-control-date{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:20px}
+.atlas-control-date label{font-size:11px;color:#b5c6d3;font-weight:800}
+.atlas-control-date input{color-scheme:dark;background:#17212a;color:#f6f6f3;border:1px solid #526171;border-radius:8px;padding:9px;font-size:12px}
+.atlas-legends{display:flex;gap:14px;color:#9aaab6;font-size:10px}.atlas-legends i{width:7px;height:7px;border-radius:50%;background:var(--yellow);display:inline-block;margin-right:4px}.atlas-legends i.cool{background:#7eaff2}.atlas-legends i.muted{background:#919da9}
+#intestino .results{background:linear-gradient(145deg,#272414,#121921);border-color:#554f2c}
+.atlas-visual-note{font-size:10px;color:#9fabb6;line-height:1.5;margin:8px 0 0}
+@media(max-width:980px){.hero{min-height:0;grid-template-columns:1fr 1fr}.atlas-main{grid-template-columns:minmax(0,1.18fr) minmax(260px,.82fr)}.atlas-inspector{padding:19px}.atlas-canvas{height:350px}}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:38px 0 25px}.hero h1{font-size:clamp(53px,10vw,75px)}.hero-orb-wrap{max-width:440px;margin-top:-7px}.atlas-main,.atlas-bottom{grid-template-columns:1fr}.atlas-view,.atlas-inspector{min-height:0}.atlas-canvas{height:min(90vw,430px)}.atlas-inspector{gap:10px}.atlas-big{font-size:47px}}
+@media(max-width:520px){.container{padding:0 15px}.topbar{height:70px}.brand{font-size:15px;gap:9px}.brand small{font-size:8px}.brand .brand-mark{width:32px;height:32px}.top-links a{font-size:9px;padding:8px 9px}.hero h1{font-size:clamp(51px,12.5vw,67px)}.hero p{font-size:14px}.hero-orb-wrap{max-width:365px}.hero-orb-foot{font-size:9px;bottom:-1px}.atlas-controller{padding:17px 14px}.atlas-selector{gap:6px}.atlas-chip{font-size:10px;padding:9px 11px}.atlas-scale{gap:9px}.atlas-scale-marks{font-size:8px}.atlas-view{padding:15px 10px 11px}.atlas-toolbar{font-size:10px}.atlas-badge{font-size:9px;padding:5px 7px}.atlas-canvas{height:320px}.atlas-inspector{padding:22px 18px}.atlas-flow{gap:6px}.atlas-flow-item{padding:10px 7px}.atlas-flow-item b{font-size:10px}.atlas-flow-item p{font-size:10px}.atlas-bottom-box{padding:18px 15px}.atlas-legends{gap:7px;font-size:9px}}
+@media print{.hero-orb-wrap,.atlas-controller,.atlas-view,.atlas-bottom,.atlas-next,.atlas-selector,.quicknav,.hero-actions{display:none!important}.atlas-main{display:block}.atlas-inspector{min-height:0}.atlas-link{display:none}.hero{display:block;padding:20px 0}body{color:black;background:white}.atlas-inspector{color:black;background:white}.atlas-inspector p,.atlas-inspector li{color:black!important}}
+</style>
+</head>
+<body>
+<div class="container">
+ 
+ <header class="topbar">
+   <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>RACE ATLAS<small>PERFORMANCE EDUCATION · GUÍA INTERACTIVA</small></span></div>
+   <div class="top-links"><a href="#explorador">EXPLORAR ↗</a><a href="#intestino">MI INTESTINO ↗</a></div>
+ </header>
+ <section class="hero" aria-labelledby="hero-title">
+   <div>
+     <div class="eyebrow">COMPETITION READY / HYROX</div>
+     <h1 id="hero-title">ENTRENASTE.<br><em>AHORA,</em><br>PLANEA.</h1>
+     <p>Explora la última semana antes de competir: <strong style="color:white">alimentación, viaje, hidratación, geles y tolerancia intestinal.</strong> Cada decisión tiene un momento.</p>
+     <div class="pills"><span class="pill-label">48 H → META</span><span class="pill-label">8 ESTACIONES</span><span class="pill-label">SIN EXPERIMENTOS</span></div>
+     <div class="hero-actions"><a class="hero-primary" href="#explorador">EXPLORAR MI PREPARACIÓN ↗</a><a class="hero-secondary" href="#intestino">Evaluar mi tolerancia →</a></div>
+   </div>
+   <div class="hero-orb-wrap">
+     <svg id="hero-race-orb" viewBox="0 0 600 600" role="img" aria-label="Mapa conceptual circular con la ruta de preparación y ocho estaciones de una competencia tipo HYROX">
+       <defs><radialGradient id="orbGrad"><stop offset="0" stop-color="#1a2027"/><stop offset=".8" stop-color="#111922"/><stop offset="1" stop-color="#070c13"/></radialGradient><clipPath id="orbClip"><circle cx="300" cy="294" r="238"/></clipPath></defs>
+       <circle cx="300" cy="294" r="263" fill="none" stroke="#536372" stroke-dasharray="3 9"/>
+       <circle cx="300" cy="294" r="239" fill="url(#orbGrad)" stroke="#607485" stroke-width="1.3"/>
+       <g id="race-orb-contents" clip-path="url(#orbClip)"></g>
+       <circle cx="300" cy="294" r="238" fill="none" stroke="#8ea4b4" stroke-opacity=".6"/>
+       <g fill="#d8e0e7" font-size="10" font-weight="800" letter-spacing="2"><text x="68" y="49">COMIDA · VIAJE</text><text x="364" y="557">RACE · RECOVERY</text></g>
+     </svg>
+     <div class="hero-orb-foot">SISTEMA DE PREPARACIÓN · MAPA ESQUEMÁTICO</div>
+   </div>
+ </section>
+ <nav class="quicknav" aria-label="Secciones de la guía"><a href="#explorador">01 / ATLAS</a><a href="#mapa">02 / ESTACIONES</a><a href="#viaje">03 / VIAJE</a><a href="#combustible">04 / NUTRICIÓN</a><a href="#intestino">05 / INTESTINO</a><a href="#post">06 / POSMETA</a></nav>
+ <section class="section" id="explorador">
+   <div class="section-heading"><div><div class="section-index-small">01 — EXPLORADOR DE COMPETENCIA</div><h2>Un evento. Varias decisiones.</h2></div><p>Desliza la escala temporal: cambian el esquema, las tareas y las precauciones que necesitas revisar.</p></div>
+   <div class="index">SELECCIONA UN MOMENTO</div>
+   <div class="atlas-selector" id="time-tabs" aria-label="Etapas de preparación">
+     <button class="atlas-chip" data-time="48" aria-selected="true" aria-pressed="true">01 · 48 HORAS</button>
+     <button class="atlas-chip" data-time="24" aria-selected="false" aria-pressed="false">02 · 24 HORAS</button>
+     <button class="atlas-chip" data-time="12" aria-selected="false" aria-pressed="false">03 · 12 HORAS</button>
+     <button class="atlas-chip" data-time="3" aria-selected="false" aria-pressed="false">04 · SALIDA</button>
+     <button class="atlas-chip" data-time="0" aria-selected="false" aria-pressed="false">05 · POSMETA</button>
+   </div>
+   <div class="atlas-controller">
+     <div class="atlas-controller-head"><strong>DESLIZADOR DE PREPARACIÓN</strong><output id="atlas-scale-current" for="atlas-stage-slider">01 — 48 HORAS</output></div>
+     <div class="atlas-scale"><div><input id="atlas-stage-slider" type="range" min="0" max="4" step="1" value="0" aria-label="Momento de preparación"/><div class="atlas-scale-marks"><span>48 H</span><span>24 H</span><span>12 H</span><span>SALIDA</span><span>POSMETA</span></div></div><button class="atlas-next" id="atlas-next" title="Avanzar al siguiente momento" aria-label="Siguiente etapa">→</button></div>
+   </div>
+   <div class="atlas-main">
+     <article class="atlas-view">
+       <div class="atlas-toolbar"><span id="atlas-map-title">RUTA / PREPARACIÓN</span><span class="atlas-badge">● ESQUEMA ILUSTRATIVO</span></div>
+       <div class="atlas-canvas"><svg viewBox="0 0 750 505" id="atlas-svg" role="img" aria-label="Mapa conceptual interactivo de cinco fases de preparación deportiva">
+         <defs><radialGradient id="atlasOrb"><stop offset="0" stop-color="#2b2b19"/><stop offset=".78" stop-color="#101c27"/><stop offset="1" stop-color="#08111b"/></radialGradient><clipPath id="atlClip"><circle cx="374" cy="244" r="211"/></clipPath></defs>
+         <circle cx="374" cy="244" r="242" fill="none" stroke="#665e36" stroke-dasharray="4 9"/>
+         <circle cx="374" cy="244" r="223" fill="none" stroke="#444d50"/>
+         <circle cx="374" cy="244" r="211" fill="url(#atlasOrb)" stroke="#897c45" stroke-width="1.2"/>
+         <g id="atlas-dynamic" clip-path="url(#atlClip)"></g>
+         <circle cx="374" cy="244" r="211" fill="none" stroke="#bbaa59" stroke-opacity=".5"/>
+         <text x="37" y="45" font-size="11" font-family="monospace" letter-spacing="2" fill="#d9d094">CAMPO / COMPETENCIA</text>
+         <text x="374" y="500" text-anchor="middle" font-size="11" fill="#a3b0bb" id="atlas-caption">Diagrama conceptual · no representa cartografía oficial</text>
+       </svg></div>
+       <div class="atlas-view-foot"><span>PREPARACIÓN NUTRICIONAL · SIN DATOS CLÍNICOS</span><div class="atlas-legends"><span><i></i>Prioridad</span><span><i class="cool"></i>Logística</span><span><i class="muted"></i>Contexto</span></div></div>
+     </article>
+     <aside class="atlas-inspector" aria-live="polite">
+       <div class="atlas-top"><span>INSPECTOR DE ETAPA</span><span id="atlas-stage-count">01 / 05</span></div>
+       <div class="atlas-big" id="time-big">48 H</div>
+       <div class="atlas-kicker" id="atlas-phase-category">ENERGÍA / LOGÍSTICA</div>
+       <h3 id="time-heading">Prepara sin improvisar.</h3>
+       <p id="time-text">Energía suficiente, traslado organizado y sueño.</p>
+       <div class="atlas-metrics"><div class="atlas-metric"><b id="atlas-meta1">4</b><span id="atlas-meta1-label">acciones esenciales</span></div><div class="atlas-metric"><b id="atlas-meta2">SIN NOVEDADES</b><span id="atlas-meta2-label">regla de seguridad</span></div></div>
+       <div class="index">ACCIONES DEL MOMENTO</div>
+       <div class="time-tasks" id="time-tasks"></div>
+       <div class="atlas-caution" id="time-warning">No estrenes alimentos ni suplementos.</div>
+     </aside>
+   </div>
+   <div class="atlas-bottom">
+     <div class="atlas-bottom-box"><div class="index">02 — CÓMO LEER TU PREPARACIÓN</div><h3>De la logística al rendimiento.</h3><p>Planificación realista: cada decisión depende de tu horario, transporte, acceso a cocina y productos ya ensayados.</p><div class="atlas-flow"><div class="atlas-flow-item"><span>01</span><b>Planifica</b><p>Comidas + salida + check-in</p></div><div class="atlas-flow-item"><span>02</span><b>Comprueba</b><p>Geles + agua + tolerancia</p></div><div class="atlas-flow-item"><span>03</span><b>Documenta</b><p>Energía + molestias + recuperación</p></div></div><div class="atlas-control-date"><label for="race-date">¿CUÁNDO COMPITES?</label><input type="datetime-local" id="race-date" aria-label="Fecha y hora de tu competencia" /></div><p id="atlas-date-info" class="atlas-detail-status" aria-live="polite">Selecciona la fecha de tu competencia para mostrar el momento de esta etapa.</p><p class="atlas-visual-note">El horario es opcional. Este dispositivo no envía la fecha ni las respuestas a un servidor.</p></div>
+     <div class="atlas-bottom-box"><div class="index">03 — SISTEMAS CONECTADOS</div><h3>Lo que debes coordinar.</h3><svg id="atlas-phys" class="atlas-phys-map" viewBox="0 0 360 200" role="img" aria-label="Red interactiva entre viaje, comidas, hidratación, intestino y ejecución"></svg><div id="phys-selected" class="atlas-detail-status">SISTEMA · PREPARACIÓN</div><div id="phys-description" class="atlas-detail-text">La alimentación, el viaje y las sensaciones intestinales interactúan con la ejecución. Selecciona un nodo.</div><div class="atlas-visual-note">Esquema educativo de decisiones relacionadas, no una red fisiológica medida.</div></div>
+   </div>
+ </section>
+ <section class="section" id="mapa">
+  <div class="section-heading"><div><div class="index">02 / LECTURA DEL EVENTO</div><h2>Conoce las estaciones.</h2></div><p>Selecciona una estación. Este esquema ayuda a planear esfuerzos; la ubicación de agua y servicios debe confirmarse en el mapa oficial.</p></div>
+  <div class="panel">
+   <div class="art-caption"><span>8 TRAMOS DE CARRERA · 8 ESTACIONES</span><span class="accent">ESQUEMA / NO OFICIAL</span></div>
+   <svg id="course-svg" class="race-svg" viewBox="0 0 960 325" role="img" aria-label="Circuito esquemático con las ocho estaciones de HYROX">
+    <rect x="23" y="30" width="914" height="267" rx="46" fill="none" stroke="#60666c" stroke-width="2"/>
+    <path class="track" d="M100 66 H835 Q902 66 902 124 V212 Q902 262 836 262 H102 Q55 262 55 218 V112 Q55 66 100 66"/>
+    <path class="track2" d="M100 66 H835 Q902 66 902 124 V212 Q902 262 836 262 H102 Q55 262 55 218 V112 Q55 66 100 66"/>
+    <g id="station-svgs">
+     <rect class="stbox is-on" data-s="0" x="107" y="104" width="150" height="49" rx="6"/><rect class="stbox" data-s="1" x="275" y="104" width="150" height="49" rx="6"/><rect class="stbox" data-s="2" x="443" y="104" width="150" height="49" rx="6"/><rect class="stbox" data-s="3" x="611" y="104" width="150" height="49" rx="6"/>
+     <rect class="stbox" data-s="7" x="107" y="178" width="150" height="49" rx="6"/><rect class="stbox" data-s="6" x="275" y="178" width="150" height="49" rx="6"/><rect class="stbox" data-s="5" x="443" y="178" width="150" height="49" rx="6"/><rect class="stbox" data-s="4" x="611" y="178" width="150" height="49" rx="6"/>
+     <g text-anchor="middle"><text x="182" y="133">01 · SKIERG</text><text x="350" y="133">02 · SLED PUSH</text><text x="518" y="133">03 · SLED PULL</text><text x="686" y="133">04 · BURPEES</text><text x="182" y="206">08 · WALL BALLS</text><text x="350" y="206">07 · LUNGES</text><text x="518" y="206">06 · CARRY</text><text x="686" y="206">05 · ROW</text></g>
+    </g>
+    <g><rect x="41" y="125" width="50" height="33" fill="#dfe6ee"/><text x="66" y="146" fill="#000" class="spec" text-anchor="middle" style="fill:#000;font-weight:900">START</text><rect x="839" y="173" width="72" height="30" fill="#dfe6ee"/><text x="875" y="193" style="fill:#000;font-weight:900" text-anchor="middle">FINISH</text><text class="small-svg" x="480" y="51" text-anchor="middle">TRAMOS DE 1 KM ENTRE ESTACIONES · MAPA ABREVIADO</text><text class="small-svg" x="480" y="286" text-anchor="middle">→ CONFIRMAR CHECK-IN · HORARIO · AGUA EN MAPA OFICIAL ←</text></g>
+   </svg>
+   <div class="station-toolbar" id="station-buttons" aria-label="Seleccionar estación"></div>
+   <div class="station-info" aria-live="polite"><strong id="station-title">01 · SkiErg</strong><div id="station-desc">Revisa la secuencia de la prueba y el tiempo de transición. No supongas puntos de hidratación dentro de las estaciones.</div></div>
+   <div class="fineprint" style="margin-top:12px">La trayectoria es ilustrativa y no representa la distribución ni los servicios reales del recinto. Consulta las indicaciones oficiales de tu evento.</div>
+  </div>
+ </section>
+ <section class="section" id="viaje">
+  <div class="section-heading"><div><div class="index">03 / LOGÍSTICA</div><h2>Tu alimentación viaja.</h2></div><p>Cambia las opciones según tu transporte y acceso a cocina; recibe recomendaciones útiles para el trayecto.</p></div>
+  <div class="grid2">
+   <div class="panel plan-block">
+    <label class="label">MEDIO DE TRANSPORTE</label>
+    <div class="choices" id="transport"><button class="choice" data-transport="bus" aria-pressed="true">AUTOBÚS</button><button class="choice" data-transport="car" aria-pressed="false">COCHE</button></div>
+    <div style="height:18px"></div><label class="label">¿TENDRÁS COCINA?</label>
+    <div class="choices" id="kitchen"><button class="choice" data-kitchen="no" aria-pressed="true">NO</button><button class="choice" data-kitchen="yes" aria-pressed="false">SÍ</button></div>
+    <p style="margin:18px 0 0">Selecciona las condiciones reales. El menú es orientativo y debe ajustarse a lo que ya toleras.</p>
+   </div>
+   <div class="panel plan-block" aria-live="polite"><span class="label">PLAN DE VIAJE ACTUALIZADO</span><h3 id="travel-title">Autobús · Sin cocina</h3><ul id="travel-list"></ul></div>
+  </div>
+  <div class="warning" style="margin-top:15px"><strong>Inocuidad:</strong> conserva alimentos perecederos a 4 °C o menos. Sin refrigeración adecuada, descártalos tras 2 horas (1 hora si la temperatura supera 32 °C). Los geles energéticos en envase íntegro no requieren la misma refrigeración que los alimentos perecederos, salvo indicación del fabricante.</div>
+  <div class="panel" style="margin-top:16px">
+   <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><span class="label">CONTROL OPERATIVO</span><h3 style="margin:0">Checklist de salida</h3></div><div id="check-counter" class="accent mono">0 / 8 LISTOS</div></div>
+   <div class="progress-wrap"><div class="progress-fill" id="check-progress"></div></div>
+   <div id="checklist" class="checklist"></div>
+  </div>
+ </section>
+ <section class="section" id="combustible">
+  <div class="section-heading"><div><div class="index">04 / COMBUSTIBLE</div><h2>Carbohidratos. Geles. Agua.</h2></div><p>Una estrategia practicada vale más que una intervención nueva en la semana de competencia.</p></div>
+  <div class="food-flow">
+   <div class="card"><div class="number">01</div><strong>48–24 h antes</strong><p>Prioriza comidas suficientes y conocidas, con fuentes de carbohidratos. Para esfuerzos largos o varios heats puede requerirse un ajuste mayor, pero no una carga máxima universal.</p></div>
+   <div class="card"><div class="number">02</div><strong>3–4 h antes</strong><p>Una comida conocida con carbohidratos; adapta cantidad a tiempo disponible y tolerancia. Reduce fibra y grasa cerca del esfuerzo si te producen síntomas.</p></div>
+   <div class="card"><div class="number">03</div><strong>Durante / después</strong><p>Ingesta durante el esfuerzo según duración, acceso real y práctica previa. Después, repón líquidos y realiza una comida con carbohidratos y proteína.</p></div>
+  </div>
+  <div class="grid2" style="margin-top:16px">
+   <div class="panel light"><div class="label">GEL ENTRENADO ≠ GEL OBLIGATORIO</div><h3 style="margin:0 0 7px">No prescribimos uno por defecto.</h3><p class="small subtle" style="margin:0">En esfuerzos de ~1–2.5 horas pueden considerarse aproximadamente 30–60 g de carbohidratos por hora <b>cuando el atleta ha practicado la estrategia y dispone de oportunidades reales para consumirlos</b>. También cuentan bebidas con carbohidratos. El gel no sustituye al agua ni a un plan individual.</p></div>
+   <div class="panel light"><div class="label">BOCA SECA Y ALTITUD</div><h3 style="margin:0 0 7px">Atención a la sede.</h3><p class="small subtle" style="margin:0">Si viajas desde menor altitud a Ciudad de México, el esfuerzo puede sentirse más exigente. Boca seca no equivale automáticamente a deshidratación. Revisa clima, sed, antecedentes y el acceso a bebidas; evita beber forzadamente o usar sales extra sin evaluación.</p></div>
+  </div>
+  <div class="warning red" style="margin-top:15px"><b>Evita:</b> probar geles, cafeína, bicarbonato, megadosis de fibra, laxantes o suplementos nuevos el día de la competencia. Tampoco hagas restricción de agua ni cortes de peso de última hora sin supervisión clínica.</div>
+ </section>
+ <section class="section" id="intestino">
+  <div class="section-heading"><div><div class="index">05 / MÓDULO INTERACTIVO</div><h2>¿Cómo llega tu intestino?</h2></div><p>Dos variables distintas: síntomas recientes y experiencia con carbohidratos durante el ejercicio. Tu respuesta modifica las recomendaciones.</p></div>
+  <div class="grid2">
+   <div class="panel selector-stack">
+    <div><div class="input-row"><label class="label" for="symptoms" style="margin:0">MOLESTIAS GI DURANTE EL EJERCICIO</label><output class="slider-label" id="symptoms-value" for="symptoms">0/10</output></div><input type="range" min="0" max="10" value="0" step="1" id="symptoms" class="slider-track"/><div class="scale-labels"><span>0 · NINGUNA</span><span>5 · MODERADAS</span><span>10 · MUY INTENSAS</span></div><div class="fineprint" style="margin-top:9px">Escala orientativa de autorreporte, no validada para diagnóstico. Piensa en las últimas sesiones similares.</div></div>
+    <div><span class="label">¿HAS PRACTICADO COMER / BEBER CHO EN SESIONES INTENSAS?</span><div class="choices" id="practice"><button class="choice" data-practice="none" aria-pressed="true">NO</button><button class="choice" data-practice="some" aria-pressed="false">POCAS VECES</button><button class="choice" data-practice="trained" aria-pressed="false">SÍ, REPETIDAMENTE</button></div></div>
+    <div><span class="label">DURACIÓN ESPERADA DE TU EVENTO</span><div class="choices" id="duration"><button class="choice" data-duration="short" aria-pressed="false">&lt;60 MIN</button><button class="choice" data-duration="medium" aria-pressed="true">60–90 MIN</button><button class="choice" data-duration="long" aria-pressed="false">&gt;90 MIN</button></div></div>
+    <label class="check" style="background:#271c1c;border-color:#6b4646"><input id="redflags" type="checkbox"/><span>Presento señales de alarma: dolor abdominal intenso, vómitos repetidos, sangre en heces, fiebre o desmayo.</span></label>
+   </div>
+   <div class="results" id="results" aria-live="polite"><div class="result-head"><span class="label" style="margin:0">LECTURA OPERATIVA</span><span class="status-label" id="result-label">EVALUACIÓN</span></div><h3 id="result-title">Preparación intestinal</h3><p class="little subtle" id="result-intro"></p><ul id="result-list"></ul><div class="fineprint" id="result-note"></div><div class="btn-row no-print"><button class="main-btn" id="copy-plan">COPIAR MIS RECOMENDACIONES</button><button class="secondary-btn" id="download-plan">GUARDAR .TXT</button></div><p class="fineprint" id="copy-status" role="status" style="margin:9px 0 0"></p></div>
+  </div>
+  <div class="warning" style="margin-top:15px"><strong>Último ensayo en el estadio:</strong> solo si ya tienes experiencia con los productos y se realiza de acuerdo con la planificación de entrenamiento. El último ensayo no sustituye varias semanas de adaptación intestinal. No incrementes dosis ni pruebes combinaciones nuevas a pocas horas de la carrera.</div>
+ </section>
+ <section class="section" id="post">
+  <div class="section-heading"><div><div class="index">06 / APRENDER DE LA EXPERIENCIA</div><h2>Después de la meta.</h2></div><p>Un seguimiento breve convierte tu experiencia de competencia en decisiones útiles para la siguiente.</p></div>
+  <div class="grid3">
+   <div class="card"><span class="label">ENERGÍA</span><h3>¿Cómo rendiste?</h3><p>¿Tuviste caída de energía, hambre o cambios importantes respecto a lo esperado?</p></div>
+   <div class="card"><span class="label">INTESTINO</span><h3>¿Qué toleraste?</h3><p>Registra productos, horarios, cantidades y cualquier síntoma durante el evento.</p></div>
+   <div class="card"><span class="label">RECUPERACIÓN</span><h3>¿Qué ajustar?</h3><p>Evalúa líquidos, comida postcompetencia, descanso y logística.</p></div>
+  </div>
+  <div class="btn-row no-print"><button class="secondary-btn" onclick="window.print()">IMPRIMIR / GUARDAR COMO PDF</button><a href="#ruta" class="secondary-btn" style="text-decoration:none">↑ VOLVER A LA RUTA</a></div>
+ </section>
+ <section class="section" id="evidencia"><div class="section-heading"><div><div class="index">07 / TRAZABILIDAD</div><h2>Base científica.</h2></div><p>Guía educativa derivada de consensos generales. La dosificación final corresponde a la evaluación individual.</p></div>
+  <ol class="sources"><li><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12106582/">Costa et al., 2025, Sports Medicine</a> — prevención y manejo de síntomas gastrointestinales asociados al ejercicio.</li><li><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5596471/">Kerksick et al., 2017, JISSN</a> — estrategias de timing y aporte de carbohidratos.</li><li><a target="_blank" rel="noopener" href="https://www.mdpi.com/2072-6643/17/24/3862">SEÑ, 2025</a> — recomendaciones deportivas de carbohidratos según demanda.</li><li><a target="_blank" rel="noopener" href="https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/how-temperatures-affect-food">USDA FSIS</a> — temperaturas de seguridad alimentaria durante traslados.</li><li><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6901429/">Stellingwerff et al., 2019</a> — nutrición e hidratación ante exposición a altitud.</li><li><a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S2666337626001198">Consenso de hidratación deportiva, 2026</a> — hidratación adaptada a ambiente, esfuerzo y tolerancia.</li></ol>
+  <p class="fineprint">No es una evaluación médica, una escala validada de entrenamiento intestinal ni material oficial de HYROX. Las recomendaciones se diseñaron como apoyo educativo de Performance Education para atletas en preparación de competencia. Esta página no transmite ni almacena respuestas en un servidor; las marcas del checklist se guardan únicamente en el navegador del dispositivo.</p>
+ </section>
+ <footer class="footer"><div><b>PERFORMANCE EDUCATION</b><br>INTERVENCIÓN DE NUTRICIÓN DEPORTIVA</div><div>NO IMPROVISES · DOCUMENTA · AJUSTA<br>VERSIÓN INTERACTIVA 3.0 / OCT 2026</div></footer>
+</div>
+<script>
+'use strict';
+const stages={
+ '48':{big:'48 H',title:'Prepara sin improvisar.',desc:'Energía suficiente, traslado organizado y sueño.',tasks:['Confirma hora del heat, check-in y traslado; consulta el plano oficial del recinto.','Haz la compra de alimentos familiares para comidas, colaciones y recuperación.','Prioriza fuentes habituales de carbohidratos; la cantidad se ajusta a la demanda del evento.','Revisa lo que ya toleras: geles, bebidas, cafeína y horarios. No estrenes productos.'],warning:'No confundas «cargar carbohidratos» con comer en exceso: la estrategia debe ajustarse a duración, carga previa y tolerancia.'},
+ '24':{big:'24 H',title:'Afina la ejecución.',desc:'Reduce incertidumbre y cuida el intestino.',tasks:['Mantén comidas conocidas y regulares; no omitas comidas por el traslado.','Si has tenido síntomas, modera temporalmente fibra, grasa o picante de alimentos que normalmente te afectan.','Revisa agua potable, hielera o acceso real a refrigeración y lista de compras.','Prepara desayuno, snacks, líquidos y productos previamente ensayados.'],warning:'No inicies por tu cuenta una dieta baja en FODMAP ni hagas un ayuno prolongado para «sentirte ligero».'},
+ '12':{big:'12 H',title:'Cena y descansa.',desc:'Llega con el plan armado, no con nuevas reglas.',tasks:['Cena a un horario razonable con carbohidratos conocidos y proteína; controla porciones según apetito y tolerancia.','Deja listo número, tenis, ropa, transporte y desayuno.','Evita alcohol y grandes comidas grasosas si te generan malestar.','Organiza sueño y tiempo suficiente para salir sin estrés.'],warning:'Boca seca no implica automáticamente deshidratación. No bebas litros a la fuerza ni consumas sales en exceso.'},
+ '3':{big:'3–4 H',title:'Desayuna lo practicado.',desc:'Hora de comer, verificar y salir.',tasks:['Realiza una comida de carbohidratos familiares; ajusta tamaño según cuánto falta y tolerancia personal.','Evita el gel nuevo «por si acaso»: solo usa el que ya ensayaste, si tu plan lo requiere.','Bebe cantidades razonables según sed, clima y experiencia previa; identifica si habrá puntos de agua.','Llega con tiempo para check-in, baños, calentamiento y acceso al corral.'],warning:'En eventos muy largos podría haber estrategia intraevento con CHO entrenado; no significa que todos deban ingerir geles.'},
+ '0':{big:'META',title:'Registra y recupera.',desc:'La competencia también es información.',tasks:['Rehidrátate según sed y pérdidas estimadas, evitando sobrebeber.','Come carbohidratos y proteína en la recuperación próxima, en una ventana practicable.','Documenta energía, síntomas GI, ingesta real y cualquier cambio improvisado.','Descansa; si aparecen síntomas intensos o persistentes, busca valoración sanitaria.'],warning:'El seguimiento permite decidir qué estrategia se mantiene y cuál debe ensayarse con anticipación para otro evento.'}
+};
+const stations=[
+ ['01 · SkiErg','Inicio funcional. Evita agitarte por el ritmo externo; anota el acceso real a agua antes de la salida.'],
+ ['02 · Sled Push','Esfuerzo intenso. No planifiques comer durante el empuje; conserva transiciones controladas.'],
+ ['03 · Sled Pull','Organiza la respiración y el ritmo. Un gel no corrige una salida demasiado rápida.'],
+ ['04 · Burpee Broad Jump','Los impactos y flexiones pueden aumentar el malestar gastrointestinal si ya hay síntomas.'],
+ ['05 · Rowing','Comprueba tu patrón de esfuerzo. Si tu plan incluye bebida/CHO, respeta solo las oportunidades reales permitidas.'],
+ ['06 · Farmers Carry','Trabajo con agarre y desplazamiento. No supongas acceso a agua dentro de la estación.'],
+ ['07 · Sandbag Lunges','Evita sorpresas de último minuto: equipo, calzado y ritmo ya conocidos.'],
+ ['08 · Wall Balls','Fin de la prueba funcional. La recuperación empieza al terminar, sin necesidad de forzar una bebida de inmediato.']
+];
+const checkItems=['Hora exacta del heat y llegada al check-in','Mapa oficial descargado; ubicación de agua y atención médica','Transporte, ruta y hospedaje confirmados','Comidas y snacks conocidos comprados','Envases y conservación de alimentos resueltos','Geles/bebidas solo si ya están ensayados','Desayuno y horario de comida definidos','Ropa, tenis, identificación y artículos personales'];
+const $=id=>document.getElementById(id);
+const state={time:'48',station:0,transport:'bus',kitchen:'no',practice:'none',duration:'medium'};
+const safeText=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function renderTime(){const s=stages[state.time];$('time-big').textContent=s.big;$('time-heading').textContent=s.title;$('time-text').textContent=s.desc;$('time-tasks').innerHTML=s.tasks.map(t=>'<div class="taskline"><span>'+safeText(t)+'</span></div>').join('');$('time-warning').textContent=s.warning;document.querySelectorAll('[data-time]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.time===state.time)));}
+function renderDates(){const raw=$('race-date').value;const d=raw?new Date(raw):null;document.querySelectorAll('[data-date]').forEach(el=>{if(!d||Number.isNaN(d.getTime())){el.textContent='';return;}const hours=Number(el.dataset.date);const day=new Date(d.getTime()-hours*3600*1000);el.textContent=hours===0?'AL TERMINAR':new Intl.DateTimeFormat('es-MX',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'}).format(day);});}
+function renderStation(){const s=stations[state.station];$('station-title').textContent=s[0];$('station-desc').textContent=s[1];document.querySelectorAll('[data-station]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.station)===state.station)));document.querySelectorAll('[data-s]').forEach(e=>e.classList.toggle('is-on',Number(e.dataset.s)===state.station));}
+function renderTravel(){document.querySelectorAll('[data-transport]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.transport===state.transport)));document.querySelectorAll('[data-kitchen]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.kitchen===state.kitchen)));const bus=state.transport==='bus', cook=state.kitchen==='yes';$('travel-title').textContent=(bus?'Autobús':'Coche')+' · '+(cook?'Con cocina':'Sin cocina');const tips=[];if(bus){tips.push('Arma una mochila accesible: agua, desayuno, pan simple, plátano y snacks ya tolerados.');tips.push('Para viajes largos, identifica paradas, baños y lugares confiables para comprar comida.');}else{tips.push('Distribuye agua y snacks al alcance; define paradas sin depender de comer únicamente en gasolineras.');tips.push('Si llevas perecederos, usa hielera con refrigerantes y comprueba su temperatura.');}if(cook){tips.push('Prepara arroz/pasta/papa y proteína magra en porciones habituales; enfría y conserva de forma segura.');tips.push('Organiza una cena y desayuno simples sin ingredientes que normalmente te provoquen molestias.');}else{tips.push('Elige opciones fáciles de conseguir: pan, tortillas, fruta tolerada, arroz o pasta preparados en establecimientos confiables.');tips.push('Usa opciones no perecederas para esperas largas; compra alimentos refrigerados cerca de cuando los consumirás.');}tips.push('No retrases comidas por el trayecto: adapta horarios y volumen de alimento a tu propio plan.');$('travel-list').innerHTML=tips.map(t=>'<li>'+safeText(t)+'</li>').join('');}
+let memoryChecks=[];
+function getChecked(){try{const raw=localStorage.getItem('maximos_checklist_v1');return raw?JSON.parse(raw):memoryChecks;}catch(e){return memoryChecks;}}
+function renderChecks(){const checks=getChecked();$('checklist').innerHTML=checkItems.map((x,i)=>'<label class="check"><input type="checkbox" data-check="'+i+'" '+(checks.includes(i)?'checked':'')+'/><span>'+safeText(x)+'</span></label>').join('');$('check-counter').textContent=checks.length+' / '+checkItems.length+' LISTOS';$('check-progress').style.width=(100*checks.length/checkItems.length)+'%';}
+function setChoice(which,val){state[which]=val;document.querySelectorAll('[data-'+which+']').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset[which]===val)));renderGut();}
+let lastPlan='';
+function renderGut(){const v=Number($('symptoms').value);$('symptoms-value').textContent=v+'/10';const red=$('redflags').checked;const trained=state.practice==='trained',some=state.practice==='some',duration=state.duration;const results=[];let title='',intro='',status='',note='';
+if(red){status='ALERTA CLÍNICA';title='Detén la autoevaluación.';intro='Los síntomas de alarma requieren valoración médica; esta guía no puede recomendar geles ni alimentos para resolverlos.';results.push('Si los síntomas son actuales, suspende el ejercicio y solicita atención médica; busca atención urgente si son intensos.','No intentes controlarlos por tu cuenta con antidiarreicos, laxantes, suplementos o más geles.');note='Esto no es un diagnóstico. La prioridad es descartar una causa que requiera tratamiento.';}
+else {const level=v<=2?'bajos':v<=5?'intermedios':'altos';status='SÍNTOMAS '+level.toUpperCase();title=v<=2?'Molestias bajas':v<=5?'Vigila tu tolerancia':'Atención a síntomas relevantes';intro='Autorreporte '+v+'/10. '+(trained?'Has practicado ingesta durante esfuerzo varias veces.':some?'Tienes experiencia limitada durante el ejercicio.':'No has practicado la ingesta durante el ejercicio.');
+if(v>=6){results.push('Prioriza evaluación individual de tus síntomas, desencadenantes y patrón habitual. Si son nuevos o empeoran, consulta antes de competir.','No incrementes geles, concentración de bebidas ni fibra el día de carrera. Mantén únicamente alimentos y productos comprobados.','Registra síntomas por tipo, momento, gravedad y condiciones del ejercicio.');}
+else if(v>=3){results.push('En las 24 horas previas, reduce solo los alimentos que sabes que aumentan tus síntomas; no elimines grupos completos sin valoración.','Distribuye comidas conocidas y evita grandes porciones cerca de la salida.','Planifica acceso a baños y periodos de traslado para reducir incertidumbre.');}
+else{results.push('Conserva tu desayuno y horarios habituales, junto con una estrategia de carbohidratos proporcional al evento.','Mantén hidratación razonable y una logística que evite grandes retrasos entre comidas.');}
+if(!trained){results.push('No has demostrado todavía tolerancia repetida a geles/CHO durante esfuerzos comparables: no improvises dosis o productos nuevos en competencia.');if(duration==='long')results.push('Como el evento puede ser prolongado, revisa con tu nutriólogo una fuente de carbohidratos que ya toleres y el acceso real a ella; entrena la estrategia para futuros eventos.');}
+else if(v>=6){results.push('Aunque tengas experiencia con geles, una valoración de síntomas intensos tiene prioridad sobre aumentar la ingesta.');}
+else if(duration==='short'){results.push('Para esfuerzos menores de 60 minutos, normalmente no se necesita aporte de carbohidratos durante la prueba.');}
+else if(duration==='medium'){results.push('En 60–90 minutos la ingesta intraevento es opcional según tu desayuno, tiempo estimado, acceso y experiencia; un gel no es obligatorio.');}
+else{results.push('Si ya has practicado la estrategia y hay oportunidades reales, valora con tu profesional un aporte de ~30–60 g de carbohidratos/h; no aumentes de repente sobre tu nivel ensayado.');}
+if(some)results.push('Pocas pruebas no equivalen a tolerancia estable: prioriza el producto y la cantidad que ya has ensayado, sin progresiones de última hora.');
+results.push('Para futuras competencias: registra alimentos, gramos de carbohidratos, líquidos, intensidad, temperatura y síntomas de cada sesión de entrenamiento intestinal.');note='La escala no mide adaptación fisiológica ni clasifica enfermedades. Síntomas, ensayo previo, duración y contexto deben interpretarse juntos.';
+}
+$('results').classList.toggle('emergency',red);$('result-label').textContent=status;$('result-title').textContent=title;$('result-intro').textContent=intro;$('result-list').innerHTML=results.map(x=>'<li>'+safeText(x)+'</li>').join('');$('result-note').textContent=note;
+lastPlan='RACE ATLAS · HYROX / RECOMENDACIONES ORIENTATIVAS\n'+title+'\n'+intro+'\n\n'+results.map((s,i)=>(i+1)+'. '+s).join('\n')+'\n\n'+note+'\nNo es diagnóstico ni sustituye consulta individual.';
+}
+// Events
+$('time-tabs').addEventListener('click',e=>{const b=e.target.closest('[data-time]');if(b){state.time=b.dataset.time;renderTime();}});
+$('race-date').addEventListener('input',renderDates);
+$('station-buttons').innerHTML=stations.map((s,i)=>'<button type="button" class="station-btn" data-station="'+i+'" aria-pressed="false">'+String(i+1).padStart(2,'0')+'</button>').join('');
+$('station-buttons').addEventListener('click',e=>{const b=e.target.closest('[data-station]');if(b){state.station=Number(b.dataset.station);renderStation();}});
+$('transport').addEventListener('click',e=>{const b=e.target.closest('[data-transport]');if(b){state.transport=b.dataset.transport;renderTravel();}});
+$('kitchen').addEventListener('click',e=>{const b=e.target.closest('[data-kitchen]');if(b){state.kitchen=b.dataset.kitchen;renderTravel();}});
+$('checklist').addEventListener('change',e=>{const b=e.target.closest('[data-check]');if(!b)return;const n=Number(b.dataset.check);let list=getChecked().filter(x=>x!==n);if(b.checked)list.push(n);memoryChecks=list;try{localStorage.setItem('maximos_checklist_v1',JSON.stringify(list));}catch(e){}renderChecks();});
+$('practice').addEventListener('click',e=>{const b=e.target.closest('[data-practice]');if(b)setChoice('practice',b.dataset.practice);});
+$('duration').addEventListener('click',e=>{const b=e.target.closest('[data-duration]');if(b)setChoice('duration',b.dataset.duration);});
+$('symptoms').addEventListener('input',renderGut);$('redflags').addEventListener('change',renderGut);
+$('copy-plan').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(lastPlan);$('copy-status').textContent='Recomendaciones copiadas.';}catch(e){$('copy-status').textContent='No se pudo copiar desde este navegador. Usa «Guardar .TXT».';}});
+$('download-plan').addEventListener('click',()=>{const blob=new Blob([lastPlan],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='maximos_recomendaciones_intestinales.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);});
+
+// Race Atlas interface: stage slider + inspector visual. All information remains explanatory and non-diagnostic.
+const atlasKeys=['48','24','12','3','0'];
+const atlasData={
+ '48':{cat:'ENERGÍA / LOGÍSTICA',title:'PLAN · AGENDA · COMPRA',meta:'COMIDAS',label:'prioridad principal',nodes:['HORARIO','COMPRAS','CARBOHIDRATOS','SUEÑO','PRODUCTOS PROBADOS'],text:'Las primeras decisiones evitan cambios de último minuto.'},
+ '24':{cat:'VIAJE / TOLERANCIA',title:'TRANSPORTE · EQUIPAJE',meta:'VIAJE',label:'contexto principal',nodes:['TRASLADO','CONSERVACIÓN','AGUA','COMIDAS','BAÑOS'],text:'Organiza el viaje y evita alimentos o dosis experimentales.'},
+ '12':{cat:'CENA / RECUPERACIÓN',title:'RUTINA · DESCANSO',meta:'DESCANSO',label:'contexto principal',nodes:['CENA','SUEÑO','TENIS','DESAYUNO','HORA DE SALIDA'],text:'La cena es una parte del día, no toda la preparación.'},
+ '3':{cat:'SALIDA / EJECUCIÓN',title:'DESAYUNO · CHECK-IN',meta:'SALIDA',label:'contexto principal',nodes:['DESAYUNO','HIDRATACIÓN','BAÑOS','CHECK-IN','CALENTAR'],text:'Ejecución de un plan ya entrenado y adaptado a la prueba.'},
+ '0':{cat:'POSMETA / APRENDIZAJE',title:'RECUPERAR · REGISTRAR',meta:'RECUPERACIÓN',label:'contexto principal',nodes:['LÍQUIDOS','CARBOHIDRATOS','PROTEÍNA','SÍNTOMAS','DESCANSO'],text:'Aprender del evento permite preparar mejor la siguiente competencia.'}
+};
+const svgNS='http://www.w3.org/2000/svg';
+function svgEl(tag,attrs,parent,label){const el=document.createElementNS(svgNS,tag);Object.entries(attrs||{}).forEach(([k,v])=>el.setAttribute(k,v));if(label!==undefined)el.textContent=label;parent.appendChild(el);return el;}
+function svgPath(parent,d,stroke,w,op=.65,extra={}){return svgEl('path',{d,fill:'none',stroke,'stroke-width':w,opacity:op,'stroke-linecap':'round','stroke-linejoin':'round',...extra},parent)}
+function atlasText(parent,x,y,label,fill='#e7e9e9',size=12,other={}){return svgEl('text',{x,y,fill,'font-size':size,'font-family':'Inter,system-ui,Arial,sans-serif',...other},parent,label)}
+
+function refreshDateHint(){
+ const input=$('race-date').value;
+ const target=$('atlas-date-info');
+ if(!input){target.textContent='Selecciona la fecha de tu competencia para calcular este momento.';return;}
+ const d=new Date(input);
+ if(Number.isNaN(d.getTime())){target.textContent='Revisa que la fecha y la hora sean válidas.';return;}
+ if(state.time==='0'){target.textContent='Posmeta: registra y recupera después de tu llegada a la meta.';return;}
+ const h=Number(state.time);
+ const when=new Date(d.getTime()-h*3600000);
+ const label=new Intl.DateTimeFormat('es-MX',{weekday:'long',day:'numeric',month:'short',hour:'numeric',minute:'2-digit'}).format(when);
+ target.textContent=(h===3?'Referencia para 3–4 horas antes: ':'Momento orientativo: ')+label;
+}
+$('race-date').addEventListener('input',refreshDateHint);
+
+function drawHeroOrb(){const g=$('race-orb-contents');g.replaceChildren();
+ // Geometric system map: straighter, more technical, less topographic-organic.
+ const cx=300, cy=286;
+ const pts=[[204,150],[294,122],[392,145],[458,218],[442,332],[375,406],[266,406],[170,316]];
+ const pathOuter='M '+pts.map(p=>p.join(' ')).join(' L ')+' Z';
+ const ptsInner=pts.map(([x,y])=>[cx+(x-cx)*0.89, cy+(y-cy)*0.89]);
+ const pathInner='M '+ptsInner.map(p=>p.join(' ')).join(' L ')+' Z';
+
+ // Background geometric line field.
+ for(let i=-7;i<=7;i++){
+   const y=cy+i*26;
+   svgPath(g,`M60 ${y} L540 ${y-38}`,'#32404b',1,i%2===0?.24:.12);
+ }
+ for(let i=0;i<10;i++){
+   const x=92+i*42;
+   svgPath(g,`M${x} 86 L${x+62} 486`,'#263743',.8,i%3===0?.18:.10);
+ }
+ // Radial construction guides.
+ pts.forEach(([x,y])=>svgPath(g,`M${cx} ${cy} L${x} ${y}`,'#2c3a45',.9,.18,{'stroke-dasharray':'2 8'}));
+ // Outer structural ring.
+ svgEl('polygon',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:'#536372','stroke-width':44,'stroke-linejoin':'round',opacity:.22},g);
+ svgEl('polygon',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:'#8a9eaf','stroke-width':2.4,'stroke-linejoin':'round',opacity:.72},g);
+ // Dashed internal route.
+ svgEl('polygon',{points:ptsInner.map(p=>p.join(',')).join(' '),fill:'none',stroke:'#d9e0e7','stroke-width':2.2,'stroke-linejoin':'round','stroke-dasharray':'14 10',opacity:.85},g);
+ // Direction ticks.
+ for(let i=0;i<ptsInner.length;i++){
+   const a=ptsInner[i], b=ptsInner[(i+1)%ptsInner.length];
+   const mx=(a[0]+b[0])/2, my=(a[1]+b[1])/2;
+   const dx=b[0]-a[0], dy=b[1]-a[1], len=Math.hypot(dx,dy)||1;
+   const ux=dx/len, uy=dy/len;
+   const px=-uy, py=ux;
+   svgPath(g,`M${mx-ux*7-px*4} ${my-uy*7-py*4} L${mx+ux*7} ${my+uy*7} L${mx-ux*7+px*4} ${my-uy*7+py*4}`,'#dfe6ee',1.2,.55);
+ }
+ // Nodes.
+ pts.forEach(([x,y],i)=>{
+   svgEl('circle',{cx:x,cy:y,r:21,fill:'#121b23',stroke:i===0?'#f4f7fa':'#97a9b6','stroke-width':i===0?2.6:1.4},g);
+   atlasText(g,x,y+4,String(i+1).padStart(2,'0'),'#f4f7fa',11,{'text-anchor':'middle','font-weight':900});
+ });
+ // Center hub.
+ svgEl('circle',{cx,cy,r:88,fill:'#0d1620',stroke:'#6b7f90','stroke-width':1.3},g);
+ svgEl('circle',{cx,cy,r:124,fill:'none',stroke:'#31414d','stroke-width':1,opacity:.45},g);
+ atlasText(g,cx,cy-28,'RACE','#eef3f7',27,{'font-weight':950,'text-anchor':'middle','letter-spacing':'5'});
+ atlasText(g,cx,cy+1,'PREPARATION','#eef3f7',15,{'font-weight':900,'text-anchor':'middle','letter-spacing':'1.4'});
+ atlasText(g,cx,cy+29,'48H → META','#dbe3ea',13,{'font-weight':900,'text-anchor':'middle'});
+ atlasText(g,cx,cy+50,'08 RUNS + 08 STATIONS','#97a8b5',9,{'text-anchor':'middle','letter-spacing':'1.3'});
+}
+function renderAtlasDiagram(){const g=$('atlas-dynamic');g.replaceChildren();const idx=atlasKeys.indexOf(state.time);const conf=atlasData[state.time];
+ // Subtle contour backdrop, with explicit illustrative labeling.
+ for(let i=0;i<26;i++){let d='';for(let j=0;j<=26;j++){let x=105+j*21,y=120+i*12+14*Math.sin(j*.65+i*.41);d+=(j?' L':'M')+x.toFixed(1)+' '+y.toFixed(1)}svgPath(g,d,'#58624c',.75,.15)}
+ const positions=[[278,130],[465,145],[533,273],[372,366],[224,286]];
+ svgPath(g,'M278 130 Q374 73 465 145 T533 273 Q510 355 372 366 Q252 369 224 286 Q184 190 278 130','#c0ad50',18,.16);
+ svgPath(g,'M278 130 Q374 73 465 145 T533 273 Q510 355 372 366 Q252 369 224 286 Q184 190 278 130','#f8e384',2,.7,{'stroke-dasharray':'9 8'});
+ positions.forEach(([x,y],i)=>{
+   const chosen=i===idx;
+   svgEl('circle',{cx:x,cy:y,r:chosen?32:23,fill:chosen?'#3e3918':'#16232c',stroke:chosen?'#dfe6ee':'#768592','stroke-width':chosen?3:1.3},g);
+   atlasText(g,x,y+4,['48H','24H','12H','3H','FIN'][i],chosen?'#ffe87a':'#e0e9ea',chosen?13:11,{'text-anchor':'middle','font-weight':900});
+ });
+ // Relative thematic satellites connected to the selected phase.
+ const [cx,cy]=positions[idx];const sats=[[182,111],[534,96],[577,362],[389,420],[159,363]];
+ conf.nodes.forEach((label,i)=>{
+  const [x,y]=sats[i];svgPath(g,`M${cx} ${cy} Q${(x+cx)/2+12} ${(y+cy)/2-15} ${x} ${y}`,'#96acc6',1,.45,{'stroke-dasharray':'3 6'});
+  svgEl('circle',{cx:x,cy:y,r:3.6,fill:i%2?'#89b9e8':'#dfe6ee'},g);
+  atlasText(g,x,y-13,label,'#d9e4e8',10,{'text-anchor':'middle','font-weight':780});
+ });
+ svgEl('rect',{x:281,y:222,width:185,height:41,rx:20,fill:'#09131b',stroke:'#ada052','stroke-width':1.3},g);
+ atlasText(g,374,248,conf.meta,'#fff1a7',14,{'text-anchor':'middle','font-weight':900,'letter-spacing':'1.2'});
+ $('atlas-map-title').textContent=conf.title;
+ $('atlas-caption').textContent=conf.text;
+}
+function syncAtlas(){const idx=atlasKeys.indexOf(state.time);const cfg=atlasData[state.time];
+ $('atlas-stage-slider').value=idx;
+ $('atlas-scale-current').textContent=String(idx+1).padStart(2,'0')+' — '+(idx===3?'SALIDA':idx===4?'POSMETA':state.time+' HORAS');
+ $('atlas-stage-count').textContent=String(idx+1).padStart(2,'0')+' / 05';
+ $('atlas-phase-category').textContent=cfg.cat;
+ $('atlas-meta1').textContent=String(stages[state.time].tasks.length);
+ $('atlas-meta2').textContent=cfg.meta;
+ $('atlas-meta2-label').textContent=cfg.label;
+ document.querySelectorAll('#time-tabs [data-time]').forEach(x=>{const current=x.dataset.time===state.time;x.setAttribute('aria-pressed',String(current));x.setAttribute('aria-selected',String(current));});
+ renderAtlasDiagram();refreshDateHint();
+}
+const originalRenderTime=renderTime;
+renderTime=function(){originalRenderTime();syncAtlas();};
+$('atlas-stage-slider').addEventListener('input',e=>{state.time=atlasKeys[Number(e.target.value)];renderTime();});
+$('atlas-next').addEventListener('click',()=>{state.time=atlasKeys[(atlasKeys.indexOf(state.time)+1)%atlasKeys.length];renderTime();});
+const netNodes=[['Comidas',75,35,'Aporte suficiente y comidas conocidas según horario y tolerancia.'],['Viaje',265,35,'Horarios, transporte, baños, cocina y seguridad alimentaria.'],['Intestino',65,158,'Síntomas y experiencia con carbohidratos: evalúalos por separado.'],['Hidratación',265,158,'Acceso real a líquidos, sed, clima y pérdidas habituales.'],['Ejecución',175,98,'Competir con un plan practicado; no estrenar geles ni estrategias.']];
+let selectedNet='Ejecución';
+function drawNet(){const svg=$('atlas-phys');svg.replaceChildren();for(let i=0;i<netNodes.length;i++)for(let j=i+1;j<netNodes.length;j++)if((i+j)%3!==1){const a=netNodes[i],b=netNodes[j];svgPath(svg,`M${a[1]} ${a[2]} L${b[1]} ${b[2]}`,'#526b77',1.4,.45);}
+ netNodes.forEach((n,i)=>{const [name,x,y,description]=n;const active=name===selectedNet;const gg=svgEl('g',{'data-net':name,role:'button',tabindex:'0','aria-label':name,class:'node'},svg);svgEl('circle',{cx:x,cy:y,r:active?34:30,fill:active?'#2a2c1b':'#172533',stroke:active?'#f6df32':(i%2?'#82b0c5':'#acb6a7'),'stroke-width':active?2.6:1.2},gg);atlasText(gg,x,y+3,name,active?'#ffe55a':'#e3edf2',name.length>8?10:11,{'text-anchor':'middle','font-weight':850,'pointer-events':'none'});});
+ const curr=netNodes.find(n=>n[0]===selectedNet);$('phys-selected').textContent='NODO / '+selectedNet.toUpperCase();$('phys-description').textContent=curr[3];
+}
+function handleNet(e){const node=e.target.closest('[data-net]');if(node){selectedNet=node.dataset.net;drawNet();}}
+$('atlas-phys').addEventListener('click',handleNet);
+$('atlas-phys').addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();handleNet(e);}});
+drawHeroOrb();drawNet();
+
+renderTime();renderDates();renderStation();renderTravel();renderChecks();renderGut();
+</script>
+</body>
+</html>
